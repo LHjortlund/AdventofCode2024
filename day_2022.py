@@ -23,7 +23,17 @@ if current_elf:
     elves.append(sum(current_elf))
 
 #Find nissen med flest calories
-max_calories = max(elves)
+#max_calories = max(elves)
 
-print("Nissen med flest calories bærer:", max_calories)
+#print("Nissen med flest calories bærer:", max_calories)
+
+#PART TWO of dag 1
+
+#Sorter calories-listen i faldende rækkefølge
+elves.sort(reverse=True)
+
+#Find summen af calories for de tre nisser som har flest calories
+top_three_sum = sum(elves[:3])
+
+print("Top 3 nisser bærer tilsammen: ", top_three_sum)
         
