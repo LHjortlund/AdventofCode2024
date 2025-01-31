@@ -17,5 +17,18 @@ right.sort()
 #Compare the two smallest number form left and right lists, and store the differences
 differences = []
 for i in range(len(left)):
-    
+    difference = abs(left[i] - right[i])
+    differences.append(difference)
+
+#calculate the sum of the differences
+sum_of_differences = sum(differences)
+
+#print the differences
+for diff in differences:
+    print(diff)
+
+print("sum of differences:", sum_of_differences)
+
+    #contents = file.read()
+    #print(content)
 
