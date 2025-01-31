@@ -21,6 +21,25 @@ def get_priority(item):
 total_priority = 0 #Heri har vi summen af prioriteten
 
 #indlæs input fra data.txt og beregn total af prioriteten
-with open()
+with open("day3_data.txt", encoding="utf-8") as file:
+    for line in file:
+        line = line.strip() #fjern eventuelle mellemrum/linjer
+
+        #del linjen i 2
+        mid = len(line) // 2
+        #first half 
+        first_compartment = set(line[:mid]) 
+        #second half
+        sencond_compartment = set(line[mid:])
+
+        #find equal fællesnævneren
+        common_item = first_compartment.intersection(sencond_compartment)
+
+        if common_item:
+            total_priority += get_priority(common_item.pop())
+
+print("Total sum af prioriteter: ", total_priority)
+
+
 
 
