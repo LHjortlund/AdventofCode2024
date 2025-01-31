@@ -1,5 +1,6 @@
 #AdventOfCode-Challenge day 1 part 1
 #For reading the lines each side and store them in seperate lines
+#then sum of differences
 
 left =[]
 right = []
