@@ -18,4 +18,9 @@ def get_priority(item):
         return ord(item) - ord('A') + 27
     return 0 #skal ikke ske, men en sikring
 
+total_priority = 0 #Heri har vi summen af prioriteten
+
+#indlæs input fra data.txt og beregn total af prioriteten
+with open()
+
 
