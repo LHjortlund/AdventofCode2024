@@ -10,3 +10,12 @@ with open("my_data.txt", encoding='utf-8') as file:
         left.append(int(nums[0]))
         right.append(int(nums[1]))
 
+#sort the left and right lists
+left.sort()
+right.sort()
+
+#Compare the two smallest number form left and right lists, and store the differences
+differences = []
+for i in range(len(left)):
+    
+
